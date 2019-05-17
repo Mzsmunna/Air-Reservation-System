@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Air_Reservation" Class="FlightDetails_TableDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Air_Reservation.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="Air_Reservation_System.Properties.Settings" SettingsPropertyName="Air_ReservationConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Flight_Details" Member="Flight_Details">
+    <Type Name="Flight_Detail">
+      <Column Name="Flight_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Flight_Name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Destination" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Departure" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Time" Type="System.TimeSpan" DbType="Time NOT NULL" CanBeNull="false" />
+      <Column Name="[Available_Seat(Eco)]" Member="Available_Seat_Eco_" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Available_Seat(Bsns)]" Member="Available_Seat_Bsns_" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Economy_Cost" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="Business_Cost" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

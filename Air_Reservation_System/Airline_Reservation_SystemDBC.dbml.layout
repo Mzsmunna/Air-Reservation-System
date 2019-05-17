@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Airline_Reservation_SystemDBC">
+  <DataContextMoniker Name="/Airline_Reservation_SystemDBCDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d5762fcd-4625-499c-97f3-aac80490ac98" absoluteBounds="3.125, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Airline_Reservation_SystemDBCDataContext/Admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce5d203d-794a-46d5-8e97-9cc5c924ecda" absoluteBounds="3.14, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="92dd13ec-0657-4d0a-aa33-dfed2797a9de" absoluteBounds="5.375, 1.375, 2, 3.1170068359375">
+      <DataClassMoniker Name="/Airline_Reservation_SystemDBCDataContext/Customer_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="706eaf89-504e-44c8-b8da-ed9eebc24ac8" absoluteBounds="5.39, 1.835, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a279615a-9ed4-45d6-aabf-249488e51ad9" absoluteBounds="0.5, 0.875, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/Airline_Reservation_SystemDBCDataContext/Flight_Detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="04292fc7-7b13-4786-8b44-32fe078a4ccf" absoluteBounds="0.51500000000000012, 1.335, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="314b1b2a-11ea-43db-bab3-91309c4c58bd" absoluteBounds="3, 2.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/Airline_Reservation_SystemDBCDataContext/TicketBooked_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="006d9f4c-a184-4f00-ab20-2e04b458eef2" absoluteBounds="3.015, 2.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

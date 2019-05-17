@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Airline_Reservation_System" Class="Airline_Reservation_SystemDBCDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Airline_Reservation_System.mdf;Integrated Security=True;Connect Timeout=30" SettingsObjectName="Air_Reservation_System.Properties.Settings" SettingsPropertyName="Airline_Reservation_SystemConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Admin" Member="Admins">
+    <Type Name="Admin">
+      <Column Name="Admin_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Admin_Name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Admin_Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Admin_Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customer_Info" Member="Customer_Infos">
+    <Type Name="Customer_Info">
+      <Column Name="CID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="CGender" Type="System.String" DbType="NVarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="CDOB" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CPhone_Num" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CEmail" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CPassport_No" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="CNationality" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Card_Holder_Name" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Credit_Card_No" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Card_Expire_Date" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="CPassword" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Flight_Details" Member="Flight_Details">
+    <Type Name="Flight_Detail">
+      <Column Name="Flight_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Flight_Name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Destination" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Departure" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Time" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="[Available_Seat(E)]" Member="Available_Seat_E_" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Available_Seat(B)]" Member="Available_Seat_B_" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="[Economy_Cost(BDT)]" Member="Economy_Cost_BDT_" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Business_Cost(BDT)]" Member="Business_Cost_BDT_" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TicketBooked_Info" Member="TicketBooked_Infos">
+    <Type Name="TicketBooked_Info">
+      <Column Name="CID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Flight_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Flight_Name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="[Economy Seat Taken]" Member="Economy_Seat_Taken" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="[Business Seat Taken]" Member="Business_Seat_Taken" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
