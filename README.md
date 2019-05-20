@@ -7,6 +7,16 @@ To execute it either extract the Air_Reservation_System.zip file directly on C d
 
 There's few bugs. 1st of all not all the exceptions are handled properly and back then in 2017 I couldn't auto increment the table ID in Microsoft SQL Server. SO you have to manually put id for every entry and duplicate entry of same id might cause a runtime error!
 
+# Demo Data :
 #admin username : Mzs, admin password : 12345m
 
 #user name : Munna, user password : 12345Munna
+
+# Demo View :
+<img src="demo/basic.gif" title="air-reservation-basic"/>
+
+# User Panel :
+<img src="demo/user-panel.gif" title="air-reservation-user"/>
+
+# Admin Panel :
+<img src="demo/admin-panel.gif" title="air-reservation-admin"/>
