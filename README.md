@@ -19,4 +19,4 @@ There's few bugs. 1st of all not all the exceptions are handled properly and bac
 <img src="demo/user-panel-view.gif" title="air-reservation-user"/>
 
 # Admin Panel :
-<img src="demo/admin-panel-view.gif" title="air-reservation-admin"/>
+<img src="demo/admin-panell-view.gif" title="air-reservation-admin"/>
