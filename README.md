@@ -13,10 +13,10 @@ There's few bugs. 1st of all not all the exceptions are handled properly and bac
 #user name : Munna, user password : 12345Munna
 
 # Demo View :
-<img src="demo/basic.gif" title="air-reservation-basic"/>
+<img src="demo/basic-view.gif" title="air-reservation-basic"/>
 
 # User Panel :
-<img src="demo/user-panel.gif" title="air-reservation-user"/>
+<img src="demo/user-panel-view.gif" title="air-reservation-user"/>
 
 # Admin Panel :
-<img src="demo/admin-panel.gif" title="air-reservation-admin"/>
+<img src="demo/admin-panel-view.gif" title="air-reservation-admin"/>
